@@ -1,0 +1,365 @@
+*{
+    font-family: 'Montserrat', sans-serif;   
+}
+.banner{
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    /* height: 100vh; */
+    min-width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.banner-image{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    /* image-rendering: pixelated; */
+
+}
+
+.nav{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 15px;
+}
+.nav-item{
+    text-shadow: none; 
+}
+
+.nav-link{
+    color: black;
+    font-weight: 600;
+
+}
+
+.nav-link:hover{
+    color: black;
+    font-size: 18px;
+}
+
+.titulo-web{
+    background-color: black;
+    opacity: 69%;
+    min-width: 55%;
+    position: absolute;
+    /* top: 58%; */
+    margin-bottom: 40px;
+}
+
+.titulo{
+    margin-left: 45px;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: .5rem;
+    margin-right: 10px;
+}
+
+.btn-servicios{
+    position: absolute;
+    bottom: 40px;
+    left: 45%;
+}
+
+.btn-danger{
+    background-color: darkgray;
+    border-color: darkgray;
+}
+
+.btn-danger:hover{
+    background-color: grey;
+    border-color: grey;
+}
+.logo{
+    width: 40px;
+    height: 40px;
+    top: 0px;
+    left: 15px;
+    background-color: transparent;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo:hover{
+    width: 50px;
+    height: 50px;
+}
+
+
+.contenedor{
+    margin: auto;
+    display: table;
+}
+
+.maquina-escribir {
+    float: left;
+    position: relative;
+}
+
+.maquina-escribir span{
+    position: absolute;
+    right: 0;
+    width: 0;
+    background: black;
+    opacity: 69%;
+    border-left: 1px solid black;
+
+    animation: maquina 3s infinite alternate steps(22);
+}
+
+.titulo-servicios{
+    margin-top: 60px;
+    margin-bottom: 45px;
+}
+
+.imagen-servicio{
+    object-fit: cover;
+    width: 100%;
+    object-position: center;
+    box-shadow: 2px 2px rgba(0,0,0,0.1);
+
+}
+
+.imagen-servicio:hover{
+    width: 105%;
+    box-shadow: 3px 3px rgba(0,0,0,0.2);
+}
+
+.servicio-texto{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.services{
+    margin-top: 15px;
+}
+
+.form-wrapper{
+    display: block;
+    justify-content: center;
+    margin-top: 30px;
+    border: 1px solid black;
+    position: relative;
+    
+}
+
+.form-wrapper a{
+    color: black;
+}
+
+.form-wrapper a:hover{
+    font-weight: bold;
+}
+
+.titulo-contacto{
+    margin-top: 15px;
+}
+
+.contaco{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btn-primary{
+    background-color: #66B0F9;
+    border-color: #66B0F9;
+}
+
+.btn-primary:disabled{
+    background-color: #adb5bd;
+    border-color: #adb5bd;
+}
+
+.footer{
+    font-size: 15px;
+    background-color: rgba(211, 211, 211, 0.5);
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.list-inline{
+    display: flex;
+    margin-bottom: 0px;
+}
+
+.footer a {
+    color: #000;
+    font-size: 20px;
+    padding: 15px;
+  }
+
+.footer a:hover {
+    color: grey;
+  }
+
+@keyframes maquina{
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0;
+    }
+}  
+
+/* responsive  */
+
+@media (max-width: 1685px) {
+    .banner{
+        text-align: center;
+        color: white;
+        text-shadow: 1px 1px 5px black;
+        min-width: 100%;
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+}
+
+@media (max-width: 1300px) {
+    .banner-image{
+        height: 90vh;
+    }
+}
+
+@media (max-width: 1175px) {
+    .banner-image{
+        height: 85vh;
+    }
+}
+
+@media (max-width: 1120px) {
+    .banner-image{
+        height: 65vh;
+    }
+}
+
+@media (max-width: 1060px){
+    .logo{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 0px;
+        left: 15px;
+        background-color: transparent;
+        z-index: 1;
+    }
+
+}
+
+
+@media (max-width: 900px) { 
+    .btn-servicios{
+        position: absolute;
+        bottom: 40px;
+        left: 40%;
+    }
+ }
+
+ @media (max-width: 860px) {
+    .banner-image{
+        height: 42vh;
+    }
+}
+
+@media (max-width: 572px) {
+    .banner-image{
+        height: 33vh;
+    }
+}
+
+ @media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px){
+        .banner{
+            width: 100%;
+        }
+    }
+
+ @media (max-width: 767px) {
+    .banner{
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .titulo{
+        margin-left: 0;
+    }
+} 
+
+@media (min-width: 760px){
+    .form-wrapper{
+        left: 25%;
+        width: 50%;
+        border: 1px solid black;
+    }
+
+}
+
+@media (min-width: 630px){
+    .titulo-web{
+        position: absolute;
+        top: 58%;
+    }
+}
+
+ @media (max-width: 770px){
+    .form-wrapper{
+        border: none;
+        
+    }
+    
+}
+
+@media (max-width: 630px) {
+    .titulo-web{
+        position: absolute;
+        top: 50%;
+    }
+     
+    .btn-servicios{
+        position: absolute;
+        bottom: 40px;
+        left: 35%;
+    }
+
+    .imagen-servicio:hover{
+        width: 100%;
+        box-shadow: none;    
+    }
+ }
+
+@media (max-width: 493px){
+    .banner{
+        min-width: 100%;
+    }
+    .banner-image{
+        height: 25vh;
+    }
+    .btn-servicios{
+        position: absolute;
+        bottom: 30px;
+        left: 30%;
+    }
+}
+
+@media (max-width: 402px){
+    .btn-servicios{
+        position: absolute;
+        bottom: 20px;
+        left: 30%;
+    }
+}
+
+@media (max-width: 372px){
+    .btn-servicios{
+        position: absolute;
+        bottom: 20px;
+        left: 25%;
+    }
+}

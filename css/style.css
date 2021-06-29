@@ -136,6 +136,10 @@
     margin-top: 15px;
 }
 
+.no-border{
+    border: none;
+}
+
 .form-wrapper{
     display: block;
     justify-content: center;
@@ -191,6 +195,10 @@
     font-size: 20px;
     padding: 15px;
   }
+
+.footer p {
+    padding: 4px;
+}
 
 .footer a:hover {
     color: grey;
@@ -299,6 +307,10 @@
         border: 1px solid black;
     }
 
+    .no-border{
+        border: none;
+    }
+    
 }
 
 @media (min-width: 630px){
